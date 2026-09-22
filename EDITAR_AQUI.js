@@ -29,7 +29,8 @@ window.INVITACION = {
 
   familia: {
     padres: "Maria y Dante",
-    padrinos: "Ismael y Sandra"
+    madrina: "Sandra Rojas Landauro",
+    padrino: "Ismael Salazar Quispe"
   },
 
   dressCode: {
