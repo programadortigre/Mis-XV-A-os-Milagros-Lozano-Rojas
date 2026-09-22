@@ -7,9 +7,9 @@ window.INVITACION = {
 
   nombre: "Milagros Lozano",
   titulo: "Mis XV Años",
-  fechaISO: "2026-10-10T19:00:00-05:00",
-  fechaCorta: "10 · 10 · 2026",
-  fechaLarga: "Sábado 10 de octubre de 2026",
+  fechaISO: "2026-10-24T19:00:00-05:00",
+  fechaCorta: "24 · 10 · 2026",
+  fechaLarga: "Sábado 24 de octubre de 2026",
 
   historia: {
     linea1: "Había una vez...",
