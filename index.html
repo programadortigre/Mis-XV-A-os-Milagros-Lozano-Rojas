@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#b9e9f4" />
+  <title>Mis XV Años | Milagros Lozano Rojas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&family=Parisienne&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="intro-screen" class="intro-screen">
+    <video id="intro-video" class="intro-video" playsinline muted autoplay preload="auto"></video>
+    <div class="intro-vignette" aria-hidden="true"></div>
+    <div class="intro-sparkles" aria-hidden="true">
+      <span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span>
+    </div>
+    <div class="intro-copy" aria-hidden="true">
+      <p class="intro-title-display" data-text="titulo">Mis XV Años</p>
+      <h1 class="intro-name" data-text="nombre">Milagros Lozano Rojas</h1>
+    </div>
+    <p class="intro-sound-hint">Toca la pantalla para activar el sonido</p>
+    <button id="intro-skip" class="intro-skip" type="button">Continuar</button>
+  </div>
+
+  <audio id="bg-audio" loop preload="auto"></audio>
+  <button id="sound-toggle" class="sound-toggle" type="button" aria-label="Activar o silenciar música" hidden>♪</button>
+
+  <main class="site-shell">
+    <section class="section hero" id="inicio">
+      <div class="sparkles"></div>
+      <img class="decor butterfly b1" data-asset="mariposa01" alt="" />
+      <img class="decor butterfly b2" data-asset="mariposa04" alt="" />
+      <img class="decor trail t1" data-asset="estela" alt="" />
+      <div class="hero-inner reveal">
+        <p class="eyebrow" data-text="titulo"></p>
+        <h1 class="script-name" data-text="nombre"></h1>
+        <div class="portrait-frame">
+          <img class="portrait" data-asset="fotoPrincipal" alt="Retrato de Milagros Lozano Rojas" />
+          <img class="portrait-border" data-asset="marco" alt="" />
+        </div>
+        <p class="hero-date" data-text="fechaCorta"></p>
+      </div>
+      <div class="scroll-hint">Desliza</div>
+    </section>
+
+    <section class="section story">
+      <img class="decor butterfly b3" data-asset="mariposa03" alt="" />
+      <div class="content narrow reveal">
+        <p class="story-kicker" data-path="historia.linea1"></p>
+        <p data-path="historia.linea2"></p>
+        <h2 class="script-name small" data-text="nombre"></h2>
+        <p data-path="historia.linea3"></p>
+        <p data-path="historia.linea4"></p>
+        <div class="ornament">✦</div>
+        <p class="story-ending" data-path="historia.linea5"></p>
+        <img class="clock" data-asset="reloj" alt="Reloj ornamental marcando la medianoche" />
+        <p class="date-long" data-text="fechaLarga"></p>
+      </div>
+    </section>
+
+    <section class="section countdown-section">
+      <div class="content reveal">
+        <p class="mini-title">Falta muy poco para</p>
+        <h2>Esta noche mágica</h2>
+        <div class="ornament">✦</div>
+        <div class="countdown" aria-label="Cuenta regresiva">
+          <div><strong id="days">--</strong><span>Días</span></div>
+          <div><strong id="hours">--</strong><span>Horas</span></div>
+          <div><strong id="minutes">--</strong><span>Min</span></div>
+          <div><strong id="seconds">--</strong><span>Seg</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section details-section">
+      <div class="content reveal">
+        <h2>Detalles de la celebración</h2>
+        <div class="ornament">✦</div>
+        <img class="candelabra" data-asset="candelabro" alt="" />
+        <p class="event-type" data-path="evento.tipo"></p>
+        <p class="event-time" data-path="evento.hora"></p>
+        <h3 data-path="evento.lugar"></h3>
+        <p class="address" data-path="evento.direccion"></p>
+        <div class="family-details">
+          <p><span>Padres</span><strong data-path="familia.padres"></strong></p>
+          <p><span>Padrinos</span><strong data-path="familia.padrinos"></strong></p>
+        </div>
+        <a id="maps-link" class="glass-button" target="_blank" rel="noopener">Cómo llegar <span>›</span></a>
+      </div>
+    </section>
+
+    <section class="section memories-section">
+      <div class="content reveal">
+        <h2>Recuerdos que guardaré para siempre</h2>
+        <div class="ornament">✦</div>
+        <div class="memory-frame">
+          <img data-asset="recuerdo01" alt="Recuerdos de la infancia de Milagros Lozano Rojas" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section dress-section">
+      <div class="content reveal">
+        <p class="mini-title">Dress code</p>
+        <h2 data-path="dressCode.titulo"></h2>
+        <div class="ornament">✦</div>
+        <p class="lead" data-path="dressCode.texto"></p>
+        <div class="dress-grid">
+          <figure><img data-asset="dressCaballero" alt="Caballero con look elegante sport" /><figcaption>Caballeros</figcaption></figure>
+          <figure><img data-asset="dressDama" alt="Dama con look elegante sport" /><figcaption>Damas</figcaption></figure>
+        </div>
+        <p class="reserved"><span>✦</span><span data-path="dressCode.nota"></span></p>
+      </div>
+    </section>
+
+    <section class="section gifts-section">
+      <div class="content reveal">
+        <h2 data-path="regalos.titulo"></h2>
+        <div class="ornament">✦</div>
+        <p class="lead" data-path="regalos.texto"></p>
+        <div class="gift-actions">
+          <button class="gift-button" type="button" data-modal-open="gifts-list">Lista de obsequios</button>
+          <button class="gift-button" type="button" data-modal-open="gifts-sizes">Tallas y preferencias</button>
+          <button class="gift-button" type="button" data-modal-open="gifts-envelopes">Lluvia de sobres</button>
+        </div>
+        <img class="gift-envelope" data-asset="sobre" alt="Sobre celeste y dorado para la lluvia de sobres" />
+      </div>
+    </section>
+
+    <div class="gift-modal" id="gifts-list" hidden>
+      <div class="gift-modal-panel" role="dialog" aria-modal="true" aria-labelledby="gifts-list-title">
+        <button class="gift-modal-close" type="button" data-modal-close aria-label="Cerrar">×</button>
+        <h3 id="gifts-list-title">Ideas de detalles</h3>
+        <ul data-list-path="regalos.lista"></ul>
+      </div>
+    </div>
+    <div class="gift-modal" id="gifts-sizes" hidden>
+      <div class="gift-modal-panel" role="dialog" aria-modal="true" aria-labelledby="gifts-sizes-title">
+        <button class="gift-modal-close" type="button" data-modal-close aria-label="Cerrar">×</button>
+        <h3 id="gifts-sizes-title">Tallas</h3>
+        <ul data-list-path="regalos.tallas"></ul>
+      </div>
+    </div>
+    <div class="gift-modal" id="gifts-envelopes" hidden>
+      <div class="gift-modal-panel" role="dialog" aria-modal="true" aria-labelledby="gifts-envelopes-title">
+        <button class="gift-modal-close" type="button" data-modal-close aria-label="Cerrar">×</button>
+        <h3 id="gifts-envelopes-title">Lluvia de sobres</h3>
+        <p data-path="regalos.sobres"></p>
+      </div>
+    </div>
+
+    <section class="section rsvp-section">
+      <img class="decor butterfly b4" data-asset="mariposa07" alt="" />
+      <div class="content reveal">
+        <h2 data-path="rsvp.titulo"></h2>
+        <div class="ornament">✦</div>
+        <p class="lead" data-path="rsvp.texto"></p>
+        <a id="rsvp-link" class="glass-button primary" target="_blank" rel="noopener">Confirmar asistencia <span>›</span></a>
+        <img class="shoe" data-asset="zapatilla" alt="Zapatilla de cristal" />
+      </div>
+    </section>
+
+    <section class="section closing-section">
+      <div class="content reveal">
+        <p class="closing-copy"><span data-path="cierre.linea1"></span><br><span data-path="cierre.linea2"></span></p>
+        <h2 class="script-name small" data-text="nombre"></h2>
+        <p class="hero-date" data-text="fechaCorta"></p>
+        
+      </div>
+    </section>
+  </main>
+
+  <script src="EDITAR_AQUI.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
