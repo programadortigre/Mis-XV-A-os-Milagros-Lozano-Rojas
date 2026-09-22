@@ -5,7 +5,7 @@
 window.INVITACION = {
   assetMode: "local", // Usa los archivos descargados de assets/.
 
-  nombre: "Milagros Lozano Rojas",
+  nombre: "Milagros Lozano",
   titulo: "Mis XV Años",
   fechaISO: "2026-10-10T19:00:00-05:00",
   fechaCorta: "10 · 10 · 2026",
@@ -59,7 +59,7 @@ window.INVITACION = {
   rsvp: {
     titulo: "¿Nos acompañas?",
     texto: "Tu presencia hará que esta noche sea aún más especial.",
-    whatsapp: "https://wa.me/51945690760?text=Confirmo+mi+asistencia+a+los+XV+de+Milagros+Lozano+Rojas"
+    whatsapp: "https://wa.me/51945690760?text=Confirmo+mi+asistencia+a+los+XV+de+Milagros+Lozano"
   },
 
   cierre: {
