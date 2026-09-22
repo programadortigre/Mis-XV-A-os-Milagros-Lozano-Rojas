@@ -7,7 +7,7 @@ window.INVITACION = {
 
   nombre: "Milagros Lozano",
   titulo: "Mis XV Años",
-  fechaISO: "2026-10-24T19:00:00-05:00",
+  fechaISO: "2026-10-24T18:00:00-05:00",
   fechaCorta: "24 · 10 · 2026",
   fechaLarga: "Sábado 24 de octubre de 2026",
 
@@ -21,7 +21,7 @@ window.INVITACION = {
 
   evento: {
     tipo: "Recepción de gala",
-    hora: "7:00 PM",
+    hora: "6:00 PM",
     lugar: "Av. Miguel Grau 1111",
     direccion: "Av. Miguel Grau 1111",
     maps: "https://maps.app.goo.gl/J67jsbN61F3GETeC6?g_st=iwb"
